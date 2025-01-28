@@ -14,8 +14,14 @@
             <a-asset-item id="titanic" src="./assets/Titanic/titanic.glb"></a-asset-item>
             <a-asset-item id="iceberg" src="./assets/Titanic/iceberg.glb"></a-asset-item>
             <a-asset-item id="boat" src="./assets/Titanic/boat.glb"></a-asset-item>
+
+            <a-asset-item id="foule" src="./assets/Titanic/foule.mp3"></a-asset-item>
+            <a-asset-item id="metal" src="./assets/Titanic/metal3.wav"></a-asset-item>
             
         </a-asset>
+
+        <audio id="foule" src="foule.mp3"></audio>
+        <a-entity sound="src: #metal; autoplay: true; volume: 1"></a-entity>
 
         <a-entity id="model" gltf-model="#titanic" position="-100 -20 -250" scale="70 70 70" rotation="0 -15 0" 
             animation="property: position; to: 0 -400 -200; dur: 400000; easing: linear; loop: false"
